@@ -1,0 +1,79 @@
+body{
+    margin: 0%;
+    background-image: url("./img/limoeiro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    
+    
+    
+}
+.main-gene{
+   
+  padding-right: 25%;
+  padding-left: 25%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*toda vez que eu coloco o porto quer dizer que eue stou chamando pela classe*/
+.titulo{
+    color: black;
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+
+}
+.genius{
+     display: grid; /*Faz uma grade*/
+     grid-template-areas: 'verde vermelho' 'amarelo azul'; /*São as areas qeu eu tenho dentro da grade --> Testar depois, porque eu só consigo ver dois espaços*/
+    grid-gap: 10px; /*borda da grade, que dá o espaçamento entre as partes*/
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 100%; /*indica o quão redonda vai ser a borda do container, é 100% por que a forma é um circulo*/
+    
+    width: 500px; /*a maesma altura de largura e altura para ser uma elipse perfeita*/
+    height: 500px;
+    }
+.blue{
+    background-color: blue;
+    background-image: url("./img/cascão.png");
+    background-position: center;
+    background-size: 170px;
+    grid-area: azul;
+    border-bottom-right-radius: 100%;
+
+}
+.red{
+    background-image: url("./img/monica.png");
+    background-position: center;
+    background-size: 170px;
+    background-color: red;
+    grid-area: vermelho;
+    border-top-right-radius : 100%;
+    
+}
+.green{
+    background-image: url("./img/cebolinha.png");
+    background-position: center;
+    background-size: 170px;
+    background-color: green;
+    grid-area: verde;
+    border-top-left-radius: 100%;
+
+}
+.yellow{
+    background-image: url("./img/magali.png");
+    background-position: center;
+    background-size: 170px;
+    background-color: yellow;
+    grid-area: amarelo;
+    border-bottom-left-radius : 100%;
+    
+}
+.selected{
+    opacity:0.4;
+    border: 5px solid white;
+    lighting-color: aliceblue;
+}
